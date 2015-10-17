@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:id="@+id/share"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editBook"
+        android:editable="true"
+        android:enabled="true"
+        android:hint="Book"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editChapter"
+        android:layout_alignStart="@+id/editChapter"
+        android:layout_marginTop="90dp"
+        android:layout_alignRight="@+id/editVerse"
+        android:layout_alignEnd="@+id/editVerse" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editChapter"
+        android:editable="true"
+        android:enabled="true"
+        android:hint="Chapter"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editVerse"
+        android:layout_alignStart="@+id/editVerse" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editVerse"
+        android:layout_above="@+id/share"
+        android:layout_alignRight="@+id/share"
+        android:layout_alignEnd="@+id/share"
+        android:layout_alignLeft="@+id/share"
+        android:layout_alignStart="@+id/share"
+        android:enabled="true"
+        android:editable="true"
+        android:hint="Verse" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter your favorite scripture:"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/editBook"
+        android:layout_alignRight="@+id/editBook"
+        android:layout_alignEnd="@+id/editBook"
+        android:layout_above="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book"
+        android:id="@+id/textView"
+        android:textColor="#022eff"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/editBook"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter"
+        android:id="@+id/textView2"
+        android:textColor="#022eff"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verse"
+        android:id="@+id/textView3"
+        android:textColor="#022eff"
+        android:textSize="30dp"
+        android:layout_alignBottom="@+id/editVerse"
+        android:layout_toLeftOf="@+id/editVerse"
+        android:layout_toStartOf="@+id/editVerse" />
+</RelativeLayout>
